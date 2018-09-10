@@ -88,7 +88,7 @@ public class RedisOperator {
 	 * @param timeout
 	 *            （以秒为单位）
 	 */
-	public void set(String key, String value, long timeout) {
+	public void set(String key, String value, long timeout) { 
 		redisTemplate.opsForValue().set(key, value, timeout, TimeUnit.SECONDS);
 	}
 
